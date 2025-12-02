@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEWGORDAJE — Web Designer / HTML Developer</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="NEWGORDAJE — Web Designer & HTML Developer متخصص في تصميم المواقع، صفحات الهبوط، المتاجر الإلكترونية، وواجهات Gold Style.">
+  <meta name="keywords" content="Web Designer, HTML Developer, Gold Style, تصميم مواقع, طنجة, NEWGORDAJE, Portfolio">
+  <meta property="og:title" content="NEWGORDAJE — Web Designer">
+  <meta property="og:description" content="مصمم مواقع متخصص في HTML وواجهات Gold Style.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/preview.jpg">
+
+  <link rel="icon" href="assets/favicon.png" />
+
+  <style>
+    :root{
+      --gold:#d4af37;
+      --bg:#070707;
+      --card:#0f0f10;
+      --muted:#bfbfbf;
+      --accent:#8a6f1f;
+      --radius:14px;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box;transition:0.25s ease}
+    body{margin:0;min-height:100vh;background:#000;color:#fff;font-family:Inter, 'Poppins', sans-serif;line-height:1.6;}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;animation:fade 0.8s forwards}
+    @keyframes fade{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:none}}
+
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:700;color:#070707;font-size:18px;box-shadow:0 0 18px rgba(212,175,55,0.5)}
+
+    h1{margin:0;font-size:20px;letter-spacing:2px}
+
+    /* Language Switch */
+    .lang-switch{display:flex;gap:8px}
+    .lang-btn{cursor:pointer;font-size:13px;color:var(--muted);padding:6px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.1)}
+    .lang-btn:hover{background:rgba(255,255,255,0.05)}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center;padding:30px 0;animation:fade 1s forwards}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(212,175,55,0.12);padding:28px;border-radius:18px}
+    .hero h2{margin:0 0 12px;color:var(--gold);font-size:28px}
+
+    /* buttons */
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);cursor:pointer;background:transparent;font-size:14px}
+    .btn.primary{background:var(--gold);color:#070707;border:none}
+    .btn:hover{transform:translateY(-3px);opacity:0.9}
+
+    /* services */
+    .section{margin-top:32px}
+    .section h3{color:var(--gold);margin:0 0 12px}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .service{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);animation:fade 1s forwards}
+
+    /* Skills */
+    .skill{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04);font-size:13px}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .project{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+    .project img{width:100%;height:180px;object-fit:cover;display:block;filter:brightness(0.85)}
+    .project:hover img{filter:brightness(1)}
+
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:26px}
+
+    footer{text-align:center;color:var(--muted);margin-top:40px;padding:20px;font-size:14px}
+
+    @media (max-width:880px){.hero{grid-template-columns:1fr}.contact{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="brand">
+        <div class="logo">NG</div>
+        <div>
+          <h1>NEWGORDAJE</h1>
+          <div style="font-size:12px;color:var(--muted)">Web Designer • HTML Developer</div>
+        </div>
+      </div>
+
+      <div class="lang-switch">
+        <div class="lang-btn">AR</div>
+        <div class="lang-btn">EN</div>
+        <div class="lang-btn">FR</div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <h2>سلام — أنا ياسين، مصمم مواقع من طنجة</h2>
+        <p>متخصص في تصميم صفحات HTML، واجهات Gold Style، المتاجر الإلكترونية، وLayouts متجاوبة. كنخدم مع تجار، براندات، وناس بغاو موقع أنيق واحترافي.</p>
+
+        <div style="margin-top:18px;display:flex;gap:10px">
+          <a href="https://wa.me/212775626607" class="btn primary">Hire Me</a>
+          <a href="CV-NEWGORDAJE.pdf" class="btn">Download CV</a>
+        </div>
+      </div>
+
+      <aside>
+        <div class="service">
+          <h3 style="color:var(--gold);margin:0">Contact</h3>
+          <p>📧 Email: yassineelfatihi14@gmail.com<br>
+             📱 WhatsApp: +212775626607<br>
+             📸 Instagram: @ysn_fatihi<br>
+             📍 Tangier — Morocco
+          </p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="section">
+      <h3>About Me</h3>
+      <p style="color:var(--muted)">أنا ياسين (NEWGORDAJE)، مصمم ومطوّر واجهات بخبرة في HTML/CSS، UX/UI، Layouts Gold Style، وتصميم متاجر إلكترونية بسيطة. كنركز على البساطة، الجودة، والسرعة.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section">
+      <h3>Services</h3>
+      <div class="services">
+        <div class="service">• تصميم صفحات HTML<br><small style="color:var(--muted)">صفحات هبوط — منتجات — بروفايل</small></div>
+        <div class="service">• Gold Style UI<br><small style="color:var(--muted)">ألوان ذهبية راقية</small></div>
+        <div class="service">• متاجر إلكترونية بسيطة<br><small style="color:var(--muted)">منتجات + وصف + صور</small></div>
+        <div class="service">• تحويل PSD/Figma → HTML</div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+      <h3>Skills</h3>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">UI/UX</div>
+        <div class="skill">Gold Style Design</div>
+        <div class="skill">Responsive Layouts</div>
+        <div class="skill">Basic JS</div>
+      </div>
+    </section>
+
+    <!-- PROJECT IMAGES (REAL IMAGES WILL BE INSERTED HERE) -->
+    <section class="section">
+      <h3>Projects</h3>
+      <div class="projects">
+        <div class="project"><img src="C:\Users\Yassine\Desktop\html ysn\project html\Gemini_Generated_Image_2b7pbr2b7pbr2b7p (1).png"></div>
+        <div class="project"><img src="C:\Users\Yassine\Desktop\html ysn\project html\Gemini_Generated_Image_62tgs962tgs962tg.png"></div>
+        <div class="project"><img src="C:\Users\Yassine\Desktop\html ysn\project html\Gemini_Generated_Image_vj4hqvj4hqvj4hqv copy.png"></div>
+        <div class="project"><img src="C:\Users\Yassine\Desktop\html ysn\project html\WhatsApp Image 2025-12-02 at 01.10.05_846f4fbf.jpg"></div>
+      </div>
+      <p style="color:var(--muted);margin-top:12px">الصّور placeholders — غادي نستبدلهم بالصور الحقيقية اللي غادي تصايفطهم ليا.</p>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="section contact">
+      <div class="service">
+        <h3 style="color:var(--gold);margin:0">تواصل معي</h3>
+        <p>أرسل رسالة واتساب أو إيميل وسيتم الرد بسرعة.</p>
+        <p>📱 WhatsApp: +212775626607<br>📧 Email: yassineelfatihi14@gmail.com</p>
+      </div>
+
+      <div class="service">
+        <h4 style="margin:0;color:var(--gold)">Upload Project Images</h4>
+        <p style="color:var(--muted)">صيفط ليا صور المشاريع باش ندمجهم بلاصت placeholders.</p>
+      </div>
+    </section>
+
+    <footer>© NEWGORDAJE — Web Designer / All rights reserved</footer>
+
+  </div>
+</body>
+</html>
+
+<!-- Editable Mode Script -->
+<script>
+// Enable editing on any element with data-editable
+if (typeof window !== 'undefined') {
+  document.querySelectorAll('[data-editable]').forEach(el => {
+    el.contentEditable = true;
+    el.style.outline = 'none';
+    el.addEventListener('focus', () => el.style.border = '1px dashed gold');
+    el.addEventListener('blur', () => el.style.border = 'none');
+  });
+
+  // Replace images dynamically
+  window.replaceImage = function(id){
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.onchange = e => {
+      const file = e.target.files[0];
+      const url = URL.createObjectURL(file);
+      document.getElementById(id).src = url;
+    };
+    input.click();
+  }
+}
+// --- Image Zoom Modal ---
+const zoomModal = document.createElement('div');
+zoomModal.style.cssText = `
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+`;
+const zoomImg = document.createElement('img');
+zoomImg.style.cssText = 'max-width: 90%; max-height: 90%; border: 3px solid gold; border-radius: 12px;';
+zoomModal.appendChild(zoomImg);
+document.body.appendChild(zoomModal);
+zoomModal.onclick = () => zoomModal.style.display = 'none';
+
+// Attach to all images
+function enableZoom(){
+  document.querySelectorAll('img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.onclick = () => {
+      zoomImg.src = img.src;
+      zoomModal.style.display = 'flex';
+    };
+  });
+}
+
+enableZoom();
+
+// Add smooth fade-in animation
+zoomModal.style.transition = 'opacity 0.25s ease';
+zoomModal.addEventListener('transitionend', ()=>{});
+
+// Override modal display behavior with fade
+function openZoom(){
+  zoomModal.style.display = 'flex';
+  requestAnimationFrame(()=> zoomModal.style.opacity = '1');
+}
+function closeZoom(){
+  zoomModal.style.opacity = '0';
+  setTimeout(()=> zoomModal.style.display = 'none', 250);
+}
+
+// Reattach zoom with new animation
+function enableZoom(){
+  document.querySelectorAll('img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.onclick = () => {
+      zoomImg.src = img.src;
+      openZoom();
+    };
+  });
+}
+
+zoomModal.onclick = ()=> closeZoom();
+</script>
+
